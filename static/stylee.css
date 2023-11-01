@@ -1,0 +1,52 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2dfb41;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #007bff;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #0ad6cc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la información del usuario */
+.user-info {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Estilo de los enlaces de navegación */
+.navbar a:hover {
+    text-decoration: underline;
+}

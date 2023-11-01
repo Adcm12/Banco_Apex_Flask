@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Adicionando o link do CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Estrella Dorada - registrar</title>
+</head>
+<!-- body inicio do corpo do site -->
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul id="messages" class="list-unstyled">
+        {% for message in messages %}
+            <li class="alert alert-success">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+    <div class="container">
+
+        <h1>Banco Estrella Dorada</h1>
+        <h2>Faca seu registro</h2>
+
+        <form action="{{ url_for('registrar_usu')}}", method="post">
+
+        <p><label>Nome</label>
+            <input class="form-control" autocomplete="off" type="text" name="username" required></p>
+
+        <p><label>Email</label>
+            <input class="form-control" autocomplete="off"  type="text" name="email" required></p>
+        
+        <p><label>Senha</label>
+            <input class="form-control" autocomplete="off"  type="password" name="password" required></p>
+            <input type="submit" href="/micuenta" value="Registrar">
+        </form>
+
+    </div>
+    
+</body>
+</html>

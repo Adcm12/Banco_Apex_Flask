@@ -1,0 +1,95 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #02a70d;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del contenedor principal */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #1800f5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+/* Estilo del botón de inicio de sesión */
+input[type="submit"] {
+    background-color: #185fab;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0448ae;
+}
+
+/* Estilo del enlace de registro */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #140271;
+}
+
+ a:hover {
+    text-decoration: underline;
+    color: #05090c;
+} 
+
+messages {
+    list-style: none;
+    padding: 10px;
+    width: 50%;
+}
+
+/* Estilo para cada mensaje de éxito */
+.alert-success {
+    background-color: #35dc3b;
+    color: rgb(9, 7, 7);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
